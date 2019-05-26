@@ -57,7 +57,7 @@ public class TestBase {
 		e_driver.register(eventListener);
 		driver = e_driver;
 		
-		JavascriptExecutor js = (JavascriptExecutor)driver;
+	
 		 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

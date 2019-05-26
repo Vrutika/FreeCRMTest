@@ -56,14 +56,14 @@ public class ContactsPageTest extends TestBase{
 	
 	
 	 @Test(dataProvider="addcontactData") 
-	  public void Addcontact(String firstname,String lastname,String email,String address,String city,String state,String zip,String status,String category,String callstatus) throws InterruptedException 
+	  public void Addcontact(String firstname,String lastname,String email,String address,String city,String state,String zip,String status,String category,String callstatus,String textstatus,String emailstatus) throws InterruptedException 
 	  {
 	    
 		 Homepg.loginlnk();
 		 actpg = loginpg.login(prop.getProperty("username"), prop.getProperty("password"));
          actpg.contactslnkclick();
          contactpg.buttonnewclk();
-         contactpg.createnewcontact(firstname, lastname, email, address, city, state, zip, status, category,callstatus);
+         contactpg.createnewcontact(firstname, lastname, email, address, city, state, zip, status, category,callstatus,textstatus,emailstatus);
          contactpg.contactsavelink();
          
 	    
